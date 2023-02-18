@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+    </head>
+    <body>
+    
+<script>
+    function myfun() {
+        var a=document.getElementById("mobilenumber").value;
+        if(a=="") {
+            document.getElementById("message").innerHTML="please fill the mobile no";
+            return false;
+        }
+        if(isNaN(a)) {
+        document.getElementById("message").innerHTML="enter only numeric value";
+             return false;
+        }     if(a.lenght<10){
+             document.getElementById("message").innerHTML="Mobile number must be 10 digit";
+             return false;
+         }
+         if(a.lenght>10){
+             document.getElementById("message").innerHTML="Mobile number must be 10 digit";
+             return false;
+         }
+         if((a.charAt(0)!=9)&&(a.charAt(0)!=8)&&(a.charAt(0)!=7)){
+            document.getElementById("message").innerHTML="Mobile number must be 10 digit Mobile number must start with 9,8 and 7";
+             return false;
+         }
+     }
+     </script>
+
+    <div class="container">
+        <div class="col-md-4 col-sm-5">
+           <div class="col-md-8 col-sm-7 text-align">
+            
+        <big><big><big> <a href="index.html" class="previous ">&#8249;</a> </big></big></big>
+        
+         &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  
+         
+         <button class="btn"><i class="fa fa-close"></i></button>
+                 
+    <h2>Hi</h2> <h4 style="color:blue">please enter your mobile number to login</h4> 
+                <form onsubmit="return myfun()">
+                   Mobile Number: <input type="text" id="mobilenumber" value=""> 
+                    
+                    <input type="submit" value="Submit">
+                    <br>
+                    <b><span style="color:red ;" id="message"></span></b>
+                    <br>
+                    &nbsp;  OTP will be send to this number by SMS :
+                    <br>
+                    <input type="checkbox"><span class="geekmark"></span>By signing up,I agree to<p style="color:rgba(243, 98, 14, 0.851)"><b>Privacy Policy,Terms and Condition</b></p><br>
+                    
+    
+                    
+                </div>
+            </div>
+         </div>      
+                </form>
+            </body>
+    </html>    
+    

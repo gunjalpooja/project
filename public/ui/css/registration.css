@@ -1,0 +1,112 @@
+.button {
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    padding: 0 10px;
+}
+
+.main_container {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form .inputfield label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.textarea {
+    width: 100%;
+    height: 125px;
+    resize: none;
+}
+
+.custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.custom_select select {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.inputfield p {
+    font-size: 14px;
+    color: #757575;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: #fec107;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-decoration-color: black;
+    height: 56px;
+}
+
+.btn:hover {
+    background: #ffd658;
+}
